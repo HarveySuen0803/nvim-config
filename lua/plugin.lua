@@ -46,8 +46,6 @@ return require('packer').startup(function(use)
 
     use 'lukas-reineke/indent-blankline.nvim'
 
-    use 'echasnovski/mini.indentscope'
-
     use 'folke/flash.nvim'
 
     if packer_bootstrap then
