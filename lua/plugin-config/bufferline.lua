@@ -92,14 +92,11 @@ require("bufferline").setup {
     }
 }
 
-vim.api.nvim_set_keymap('n', '<C-[>', ':BufferLineCyclePrev<CR>', {})
-vim.api.nvim_set_keymap('n', '<C-]>', ':BufferLineCycleNext<CR>', {})
-
-vim.api.nvim_set_keymap('n', 'gT', ':BufferLineCyclePrev<CR>', {})
 vim.api.nvim_set_keymap('n', 'gt', ':BufferLineCycleNext<CR>', {})
+vim.api.nvim_set_keymap('n', 'gT', ':BufferLineCyclePrev<CR>', {})
 
-vim.api.nvim_set_keymap('n', '<C-A-[>', ':BufferLineMovePrev<CR>', {})
-vim.api.nvim_set_keymap('n', '<C-A-]>', ':BufferLineMoveNext<CR>', {})
+-- vim.api.nvim_set_keymap('n', '<C-A-]>', ':BufferLineMoveNext<CR>', {})
+-- vim.api.nvim_set_keymap('n', '<C-A-[>', ':BufferLineMovePrev<CR>', {})
 
 vim.api.nvim_set_keymap('n', 'c]', ':BufferLineCloseRight<CR>', {})
 vim.api.nvim_set_keymap('n', 'c[', ':BufferLineCloseLeft<CR>', {})

@@ -5,15 +5,9 @@ vim.g.mapleader = ";"
 vim.g.maplocalleader = ";"
 
 map('n', '<C-z>', '<nop>', opt)
-map('n', '<C-[>', '<nop>', opt)
-map('n', '<C-]>', '<nop>', opt)
 map('n', '<C-i>', '<nop>', opt)
 map('n', '<C-o>', '<nop>', opt)
 map('n', '<C-d>', '<nop>', opt)
-map('n', 'J', '<nop>', opt)
-map('n', 'K', '<nop>', opt)
-map('v', 'J', '<nop>', opt)
-map('v', 'K', '<nop>', opt)
 map('n', '<CR>', '<nop>', opt)
 map('n', 'x', '<nop>', opt)
 map('n', 'q', '<nop>', opt)
@@ -52,6 +46,8 @@ map('n', 'gl', '<C-i>', opt)
 
 map('n', '>', '>>', opt)
 map('n', '<', '<<', opt)
+map('v', '>', '>gv', opt)
+map('v', '<', '<gv', opt)
 
 map('n', '<A-Right>', 'w', opt)
 map('n', '<A-Left>', 'b', opt)
