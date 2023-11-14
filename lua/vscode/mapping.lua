@@ -15,6 +15,8 @@ map("n", "<S-u>", ":call VSCodeNotify('redo')<CR>", opt)
 
 map('n', '>', '>>', opt)
 map('n', '<', '<<', opt)
+map('v', '>', '>gv', opt)
+map('v', '<', '<gv', opt)
 
 map('v', ',', '<C-v>', opt)
 map('v', '.', '<S-v>', opt)
@@ -96,7 +98,9 @@ map("i", "<C-a>", "<Esc>I", opt)
 map("n", "<C-a>", "^", opt)
 map("v", "<C-a>", "^", opt)
 
-vim.cmd [[
-    nmap ya ggv.Gy
-    nmap ,c a```<CR>```<Up>
-]]
+map('n', 'ya', 'ggVGy', opt)
+map('n', 'da', 'ggVGd', opt)
+map('n', 'ca', 'ggVGc', opt)
+map('n', 'xa', 'ggVG"_d', opt)
+
+vim.cmd ('autocmd FileType markdown nmap ,c a```')

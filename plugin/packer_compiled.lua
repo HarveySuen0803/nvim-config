@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/HarveySuen/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["mini.indentscope"] = {
-    loaded = true,
-    path = "/Users/HarveySuen/.local/share/nvim/site/pack/packer/start/mini.indentscope",
-    url = "https://github.com/echasnovski/mini.indentscope"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/HarveySuen/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
