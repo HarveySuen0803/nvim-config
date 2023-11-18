@@ -19,8 +19,8 @@ map('i', '<A-BS>', '<nop>', opt)
 -- map('v', 'e', '<nop>', opt)
 map('n', 'f', '<nop>', opt)
 map('v', 'f', '<nop>', opt)
-
-map('n', '<CR>', 'o<Esc>', opt)
+map('n', '<CR>', '<nop>', opt)
+map('n', '<C-CR>', '<nop>', opt)
 
 map('n', 'W', ':w<CR>', opt)
 map('n', 'Q', ':q<CR>', opt)
@@ -92,5 +92,3 @@ map('n', 'ca', 'ggVGc', opt)
 map('n', 'xa', 'ggVG"_d', opt)
 
 vim.cmd ('autocmd FileType markdown nmap ,c a```')
-
-
