@@ -49,3 +49,4 @@ vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 
 vim.o.foldlevel = 99
 
+
