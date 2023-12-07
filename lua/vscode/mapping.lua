@@ -48,13 +48,16 @@ map("n", "c]", ":call VSCodeNotify('workbench.action.closeEditorsToTheRight')<CR
 map("n", "c[", ":call VSCodeNotify('workbench.action.closeEditorsToTheLeft')<CR>", opt)
 map("n", "c\\", ":call VSCodeNotify('workbench.action.closeOtherEditors')<CR>", opt)
 
-map("n", "W", ":call VSCodeNotify('workbench.action.files.save')<CR>", opt)
+map("n", "q", ":call VSCodeNotify('workbench.action.files.save')<CR>", opt)
 map("n", "Q", ":call VSCodeNotify('workbench.action.closeActiveEditor')<CR>", opt)
 
 map("n", "gd", ":call VSCodeNotify('editor.action.revealDefinition')<CR>", opt)
+map("n", "gj", ":call VSCodeNotify('editor.action.goToImplementation')<CR>", opt)
+map("n", "gk", ":call VSCodeNotify('editor.action.goToTypeDefinition')<CR>", opt)
 map("n", "gh", ":call VSCodeNotify('workbench.action.navigateBack')<CR>", opt)
 map("n", "gl", ":call VSCodeNotify('workbench.action.navigateForward')<CR>", opt)
-map("n", "gm", ":call VSCodeNotify('editor.action.goToImplementation')<CR>", opt)
+map("n", "ge", ":call VSCodeNotify('editor.action.marker.next')<CR>", opt)
+map("n", "gE", ":call VSCodeNotify('editor.action.marker.prev')<CR>", opt)
 
 map("x", "gc", "<Plug>VSCodeCommentary", opt)
 map("o", "gc", "<Plug>VSCodeCommentary", opt)
@@ -97,6 +100,11 @@ map("v", "<C-e>", "$h", opt)
 map("i", "<C-a>", "<Esc>I", opt)
 map("n", "<C-a>", "^", opt)
 map("v", "<C-a>", "^", opt)
+
+map("n", "fs", ":call VSCodeNotify('workbench.action.gotoSymbol')<CR>", opt)
+map("n", "fe", ":call VSCodeNotify('workbench.action.quickOpen')<CR>", opt)
+map("n", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
+map("v", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
 
 map('n', 'ya', 'ggVGy', opt)
 map('n', 'yJ', 'yG', opt)

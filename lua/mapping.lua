@@ -22,7 +22,7 @@ map('v', 'f', '<nop>', opt)
 map('n', '<CR>', '<nop>', opt)
 map('n', '<C-CR>', '<nop>', opt)
 
-map('n', 'W', ':w<CR>', opt)
+map('n', 'q', ':w<CR>', opt)
 map('n', 'Q', ':q<CR>', opt)
 map('v', 'Q', ':q<CR>', opt)
 

@@ -1,6 +1,7 @@
 if vim.g.vscode then
     require 'vscode.setting'
     require 'vscode.mapping'
+    -- require 'plugin-config.flash'
 else
     require 'setting'
     require 'mapping'
@@ -20,3 +21,4 @@ else
     require 'plugin-config.flash'
     require 'plugin-config.nvim-ts-autotag'
 end
+
