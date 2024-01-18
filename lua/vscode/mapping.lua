@@ -1,8 +1,8 @@
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
-vim.g.mapleader = ";"
-vim.g.maplocalleader = ";"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 map('n', 'u', '<nop>', opt)
 map('n', '<S-u>', '<nop>', opt)
@@ -11,7 +11,9 @@ map('n', 'r', '<nop>', opt)
 map('n', 'x', '<nop>', opt)
 
 map("n", "u", ":call VSCodeNotify('undo')<CR>", opt)
+map("v", "u", ":call VSCodeNotify('undo')<CR>", opt)
 map("n", "<S-u>", ":call VSCodeNotify('redo')<CR>", opt)
+map("v", "<S-u>", ":call VSCodeNotify('redo')<CR>", opt)
 
 map('n', '>', '>>', opt)
 map('n', '<', '<<', opt)
@@ -21,8 +23,8 @@ map('n', '<', '<<', opt)
 map('v', ',', '<C-v>', opt)
 map('v', '.', '<S-v>', opt)
 
--- map('n', 'j', ":call VSCodeNotify('cursorDown')<CR>", opt)
--- map("n", "k", ":call VSCodeNotify('cursorUp')<CR>", opt)
+-- map('n', 'j', "gj", opt)
+-- map("n", "k", "gk", opt)
 
 -- map('n', '<CR>', ":call VSCodeNotify('editor.action.smartSelect.expand')<CR>", opt)
 -- map('v', '<CR>', ":call VSCodeNotify('editor.action.smartSelect.expand')<CR>", opt)
@@ -77,7 +79,6 @@ map("n", "mu", ":call VSCodeNotify('editor.action.peekTypeDefinition')<CR>", opt
 map("n", "mi", ":call VSCodeNotify('editor.action.organizeImports')<CR>", opt)
 map("n", "mr", ":call VSCodeNotify('editor.action.rename')<CR>", opt)
 
-map("n", "ri", ":call VSCodeNotify('extension.pasteImage')<CR>", opt)
 map("n", "rr", ":call VSCodeNotify('code-runner.run')<CR>", opt)
 map("n", "rd", ":call VSCodeNotify('mysql.runES')<CR>", opt)
 
@@ -89,6 +90,7 @@ map("n", "sc", ":call VSCodeNotify('workbench.action.closePanel')<CR>", opt)
 map("n", "sv", ":call VSCodeNotify('workbench.view.extensions')<CR>", opt)
 map("n", "sp", ":call VSCodeNotify('workbench.view.extension.spring')<CR>", opt)
 map("n", "sa", ":call VSCodeNotify('workbench.panel.chatSidebar')<CR>", opt)
+map("v", "sa", ":call VSCodeNotify('workbench.panel.chatSidebar')<CR>", opt)
 
 map("n", "zh", ":call VSCodeNotify('workbench.action.focusLeftGroup')<CR>", opt)
 map("n", "zl", ":call VSCodeNotify('workbench.action.focusRightGroup')<CR>", opt)
@@ -110,10 +112,11 @@ map("i", "<C-a>", "<Esc>I", opt)
 map("n", "<C-a>", "^", opt)
 map("v", "<C-a>", "^", opt)
 
-map("n", "fs", ":call VSCodeNotify('workbench.action.gotoSymbol')<CR>", opt)
-map("n", "fe", ":call VSCodeNotify('workbench.action.quickOpen')<CR>", opt)
-map("n", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
-map("v", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
+-- map("n", "fs", ":call VSCodeNotify('workbench.action.gotoSymbol')<CR>", opt)
+-- map("n", "fe", ":call VSCodeNotify('workbench.action.quickOpen')<CR>", opt)
+-- map("n", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
+-- map("v", "fa", ":call VSCodeNotify('workbench.action.showCommands')<CR>", opt)
+
 
 map('n', 'yaa', 'ggyG', opt)
 map('n', 'yJ', 'yG', opt)
@@ -136,4 +139,5 @@ map('n', 'xK', '"_dgg', opt)
 map('n', 'xL', '"_d$', opt)
 map('n', 'xH', '"_d^', opt)
 
-vim.cmd ('autocmd FileType markdown nmap ,c a```')
+map('n', 'ycm', ":call VSCodeNotify('turboConsoleLog.displayLogMessage')<CR>", opt)
+map('n', 'dcm', ":call VSCodeNotify('turboConsoleLog.deleteAllLogMessages')<CR>", opt)

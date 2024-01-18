@@ -1,8 +1,8 @@
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
-vim.g.mapleader = ";"
-vim.g.maplocalleader = ";"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 map('n', '<C-z>', '<nop>', opt)
 map('n', '<C-i>', '<nop>', opt)
@@ -17,8 +17,8 @@ map('v', 'Q', '<nop>', opt)
 map('i', '<A-BS>', '<nop>', opt)
 -- map('n', 'e', '<nop>', opt)
 -- map('v', 'e', '<nop>', opt)
-map('n', 'f', '<nop>', opt)
-map('v', 'f', '<nop>', opt)
+-- map('n', 'f', '<nop>', opt)
+-- map('v', 'f', '<nop>', opt)
 map('n', '<CR>', '<nop>', opt)
 map('n', '<C-CR>', '<nop>', opt)
 
@@ -87,23 +87,15 @@ map('i', '<S-Up>', '<Esc>vk', opt)
 map('n', 'mn', ':% s/\r$//g<CR>', opt)
 
 map('n', 'yaa', 'ggyG', opt)
-map('n', 'yJ', 'yG', opt)
-map('n', 'yK', 'ygg', opt)
 map('n', 'yL', 'y$', opt)
 map('n', 'yH', 'y^', opt)
 map('n', 'daa', 'ggdG', opt)
-map('n', 'dJ', 'dG', opt)
-map('n', 'dK', 'dgg', opt)
 map('n', 'dL', 'd$', opt)
 map('n', 'dH', 'd^', opt)
 map('n', 'caa', 'ggcG', opt)
-map('n', 'cJ', 'cG', opt)
-map('n', 'cK', 'cG', opt)
 map('n', 'cL', 'c$', opt)
 map('n', 'cH', 'c^', opt)
 map('n', 'xaa', 'gg"_dG', opt)
-map('n', 'xJ', '"_dG', opt)
-map('n', 'xK', '"_dgg', opt)
 map('n', 'xL', '"_d$', opt)
 map('n', 'xH', '"_d^', opt)
 

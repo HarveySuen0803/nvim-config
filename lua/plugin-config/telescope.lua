@@ -51,8 +51,8 @@ require("telescope").setup {
 require("telescope").load_extension("fzf")
 
 -- mappings
-vim.api.nvim_set_keymap("n", "fe", [[<cmd>lua require('telescope.builtin').find_files()<cr>]], {})
-vim.api.nvim_set_keymap("n", "f/", [[<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], {})
+vim.api.nvim_set_keymap("n", "<leader>fe", [[<cmd>lua require('telescope.builtin').find_files()<cr>]], {})
+vim.api.nvim_set_keymap("n", "<leader>f/", [[<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], {})
 -- vim.api.nvim_set_keymap("n", "fg", [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], {})
 -- vim.api.nvim_set_keymap("n", "sfb", [[<cmd>lua require('telescope.builtin').buffers()<cr>]], {})
 -- vim.api.nvim_set_keymap("n", "sfh", [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], {})
