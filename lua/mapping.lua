@@ -21,10 +21,15 @@ map('i', '<A-BS>', '<nop>', opt)
 -- map('v', 'f', '<nop>', opt)
 map('n', '<CR>', '<nop>', opt)
 map('n', '<C-CR>', '<nop>', opt)
+map('n', 'U', '<nop>', opt)
+map('v', 'U', '<nop>', opt)
 
 map('n', 'q', ':w<CR>', opt)
 map('n', 'Q', ':q<CR>', opt)
 map('v', 'Q', ':q<CR>', opt)
+
+map('n', 'U', '<C-r>', opt)
+map('v', 'U', '<C-r>', opt)
 
 map('n', 'zj', '<C-w>j', opt)
 map('n', 'zh', '<C-w>h', opt)

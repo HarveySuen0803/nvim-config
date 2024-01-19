@@ -28,8 +28,8 @@ vim.o.mouse = "a"
 
 vim.o.clipboard = "unnamed"
 
-vim.o.scrolloff = 15
-vim.o.sidescrolloff = 15
+vim.o.scrolloff = 5
+vim.o.sidescrolloff = 5
 
 vim.o.hidden = true
 
