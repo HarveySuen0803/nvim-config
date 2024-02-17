@@ -15,5 +15,3 @@ require 'plugin-config.osc52'
 require 'plugin-config.indent-blankline'
 require 'plugin-config.flash'
 require 'plugin-config.nvim-ts-autotag'
-
-
