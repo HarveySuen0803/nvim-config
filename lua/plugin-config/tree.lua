@@ -79,7 +79,7 @@ require("nvim-tree").setup({
 
 vim.api.nvim_set_keymap('n', 'se', ':NvimTreeFocus<CR>', {})
 vim.api.nvim_set_keymap('n', 'sc', ':NvimTreeClose<CR>', {})
-vim.api.nvim_set_keymap('n', '“', ':NvimTreeToggle<CR>', {})
+-- vim.api.nvim_set_keymap('n', '<C-9>', ':NvimTreeToggle<CR>', {})
 
 vim.cmd[[
     autocmd BufEnter * if bufname() =~ "NvimTree" | set cursorline | nmap <esc> gl | endif

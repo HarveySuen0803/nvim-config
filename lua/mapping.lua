@@ -7,7 +7,6 @@ vim.g.maplocalleader = " "
 map('n', '<C-z>', '<nop>', opt)
 map('n', '<C-i>', '<nop>', opt)
 map('n', '<C-o>', '<nop>', opt)
-map('n', '<C-d>', '<nop>', opt)
 map('n', '<CR>', '<nop>', opt)
 map('n', 'x', '<nop>', opt)
 map('n', 'q', '<nop>', opt)
