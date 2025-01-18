@@ -32,7 +32,7 @@ require('github-theme').setup({
         darken = {                 -- Darken floating windows and sidebar-like windows
             floats = false,
             sidebars = {
-                enabled = false,
+                enable = false,
                 list = {},             -- Apply dark background to specific windows
             },
         },
@@ -59,4 +59,4 @@ vim.cmd('colorscheme github_light')
 -- vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
 -- vim.cmd('highlight StatusLine guibg=#000000')
 -- vim.cmd('highlight Pmenu guibg=#000000')
-
+--
