@@ -11,6 +11,8 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+vim.deprecate = function() end
+
 return require('packer').startup(function(use) 
     use 'wbthomason/packer.nvim'
 
