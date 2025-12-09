@@ -1,3 +1,5 @@
+vim.o.laststatus = 2
+
 require('lualine').setup {
     options = {
         theme = 'auto', -- lualine theme

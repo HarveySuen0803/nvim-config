@@ -22,11 +22,11 @@ return require('packer').startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
 
-    use 'akinsho/bufferline.nvim'
+    -- use 'akinsho/bufferline.nvim'
 
-    use 'nvim-lualine/lualine.nvim'
+    -- use 'nvim-lualine/lualine.nvim'
 
-    use 'kyazdani42/nvim-tree.lua'
+    -- use 'kyazdani42/nvim-tree.lua'
 
     use 'windwp/nvim-autopairs'
 
@@ -34,20 +34,20 @@ return require('packer').startup(function(use)
 
     use 'windwp/nvim-ts-autotag'
 
-    use 'nvim-telescope/telescope.nvim'
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+    -- use 'nvim-telescope/telescope.nvim'
+    -- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 
     use 'kylechui/nvim-surround'
 
     use 'numToStr/Comment.nvim'
 
-    use 'simrat39/symbols-outline.nvim'
+    -- use 'simrat39/symbols-outline.nvim'
 
     use 'ojroques/nvim-osc52'
 
     use 'lukas-reineke/indent-blankline.nvim'
 
-    use 'folke/flash.nvim'
+    -- use 'folke/flash.nvim'
 
     if packer_bootstrap then
         require('packer').sync()

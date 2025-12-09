@@ -3,6 +3,8 @@ local fg = ""
 local sp = ""
 local underline = ""
 
+vim.o.showtabline = 2
+
 require("bufferline").setup {
     options = {
         themable = true,

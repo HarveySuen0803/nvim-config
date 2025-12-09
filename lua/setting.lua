@@ -1,7 +1,7 @@
 vim.g.encoding = "UTF-8"
 vim.g.fileencoding = 'utf-8'
 
-vim.o.number = true
+vim.o.number = false
 
 vim.o.backup = false
 vim.o.writebackup = false
@@ -43,8 +43,8 @@ vim.o.eb = false
 
 vim.o.confirm = true
 
-vim.o.laststatus = 2
-vim.o.showtabline = 2
+vim.o.laststatus = 0
+vim.o.showtabline = 0
 
 vim.o.signcolumn = "no"
 

@@ -79,16 +79,6 @@ _G.packer_plugins = {
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
-  ["flash.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/flash.nvim",
-    url = "https://github.com/folke/flash.nvim"
-  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -98,11 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -118,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -148,21 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["symbols-outline.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
-    url = "https://github.com/simrat39/symbols-outline.nvim"
-  },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
 

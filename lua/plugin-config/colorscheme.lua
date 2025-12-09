@@ -59,4 +59,3 @@ vim.cmd('colorscheme github_light')
 -- vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
 -- vim.cmd('highlight StatusLine guibg=#000000')
 -- vim.cmd('highlight Pmenu guibg=#000000')
---
