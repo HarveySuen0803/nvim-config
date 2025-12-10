@@ -98,3 +98,5 @@ map('n', 'cH', 'c^', opt)
 map('n', 'xaa', 'gg"_dG', opt)
 map('n', 'xL', '"_d$', opt)
 map('n', 'xH', '"_d^', opt)
+
+map('n', 'mf', 'gg=G', opt)

@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
 
     use 'windwp/nvim-autopairs'
 
+    -- use 'mhartington/formatter.nvim'
+
     use 'nvim-treesitter/nvim-treesitter'
 
     use 'windwp/nvim-ts-autotag'

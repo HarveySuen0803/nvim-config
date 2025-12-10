@@ -42,8 +42,6 @@ require'nvim-treesitter.configs'.setup {
     }
 }
 
-vim.api.nvim_set_keymap("n", "mf", "gg=Gg", {})
-
 vim.o.foldmethod = 'expr'
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 
