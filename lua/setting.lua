@@ -43,6 +43,7 @@ vim.o.eb = false
 
 vim.o.confirm = true
 
+vim.o.ruler = false
 vim.o.laststatus = 0
 vim.o.showtabline = 0
 
