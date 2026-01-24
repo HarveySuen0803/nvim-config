@@ -58,14 +58,18 @@ local function set_colorscheme()
   if appearance and appearance:find("Dark") then
     vim.o.background = "dark"
     vim.cmd('colorscheme github_dark_high_contrast')
-    vim.cmd('highlight Normal guibg=#000000')
-    vim.cmd('highlight NvimTreeNormal guibg=#000000')
-    vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
-    vim.cmd('highlight StatusLine guibg=#000000')
-    vim.cmd('highlight Pmenu guibg=#000000')
+    -- vim.cmd('highlight Normal guibg=#000000')
+    -- vim.cmd('highlight NvimTreeNormal guibg=#000000')
+    -- vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
+    -- vim.cmd('highlight StatusLine guibg=#000000')
+    -- vim.cmd('highlight Pmenu guibg=#000000')
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
   else
     vim.o.background = "light"
     vim.cmd('colorscheme github_light')
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
   end
 end
 
