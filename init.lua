@@ -13,6 +13,6 @@ require("plugin-config.surround")
 -- require 'plugin-config.symbols-outline'
 require("plugin-config.comment")
 require("plugin-config.osc52")
-require("plugin-config.indent-blankline")
+-- require("plugin-config.indent-blankline")
 -- require 'plugin-config.flash'
 require("plugin-config.nvim-ts-autotag")
