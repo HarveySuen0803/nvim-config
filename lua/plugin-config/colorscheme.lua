@@ -51,11 +51,26 @@ require('github-theme').setup({
     },
 })
 
-vim.cmd('colorscheme github_light')
 
--- vim.cmd('colorscheme github_dark_high_contrast')
--- vim.cmd('highlight Normal guibg=#000000')
--- vim.cmd('highlight NvimTreeNormal guibg=#000000')
--- vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
--- vim.cmd('highlight StatusLine guibg=#000000')
--- vim.cmd('highlight Pmenu guibg=#000000')
+local function set_colorscheme()
+  local appearance = os.getenv("WEZTERM_APPEARANCE")
+
+  if appearance and appearance:find("Dark") then
+    vim.o.background = "dark"
+    vim.cmd('colorscheme github_dark_high_contrast')
+    vim.cmd('highlight Normal guibg=#000000')
+    vim.cmd('highlight NvimTreeNormal guibg=#000000')
+    vim.cmd('highlight NvimTreeEndOfBuffer guibg=#000000')
+    vim.cmd('highlight StatusLine guibg=#000000')
+    vim.cmd('highlight Pmenu guibg=#000000')
+  else
+    vim.o.background = "light"
+    vim.cmd('colorscheme github_light')
+  end
+end
+
+set_colorscheme()
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = set_colorscheme,
+})
