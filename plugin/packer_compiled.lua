@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/bilibili/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

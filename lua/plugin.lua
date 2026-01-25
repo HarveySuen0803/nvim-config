@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
 
     use 'ojroques/nvim-osc52'
 
-    use 'lukas-reineke/indent-blankline.nvim'
+    -- use 'lukas-reineke/indent-blankline.nvim'
 
     -- use 'folke/flash.nvim'
 
